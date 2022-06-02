@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from todo import views
+from django.views import generic
+from material.frontend import urls as frontend_urls
 
 router = routers.DefaultRouter()
 router.register(r'todos', views.TodoView, 'todo')
@@ -24,4 +26,6 @@ router.register(r'todos', views.TodoView, 'todo')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+    path(r'', generic.RedirectView.as_view(url='/workflow/', permanent=False)),
+    path(r'', include(frontend_urls)),
 ]

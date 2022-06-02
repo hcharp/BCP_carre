@@ -3,3 +3,5 @@ django>=3.2.13
 djangorestframework
 django-cors-headers
 django-admin
+django-material
+django-viewflow

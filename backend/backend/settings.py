@@ -39,7 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'todo'
+    'todo',
+    'viewflow',
+    'viewflow.frontend',
+    'material',
+    'material.frontend'
 ]
 
 MIDDLEWARE = [
