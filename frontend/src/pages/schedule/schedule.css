@@ -1,0 +1,19 @@
+.schedule__top {
+  display: flex;
+  justify-content: center;
+}
+
+.schedule__bot {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.schedule__time {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border: 1px solid black;
+  padding: 1rem 0.5rem;
+}
