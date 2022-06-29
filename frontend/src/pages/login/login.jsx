@@ -1,10 +1,17 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import { useNavigate } from 'react-router-dom'
 
 import './login.css'
 
 const login = () => {
+  let navigate = useNavigate()
+
+  function handleLogin(params) {
+    navigate('/home')
+  }
+
   return (
     <div className='login'>
       <Form className='login__form'>
@@ -17,7 +24,7 @@ const login = () => {
           <Form.Label>Mot de Passe</Form.Label>
           <Form.Control type="password" placeholder="Mot de passe" />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" onClick={handleLogin}>
           Se connecter
         </Button>
       </Form>

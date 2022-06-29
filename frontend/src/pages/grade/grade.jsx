@@ -2,7 +2,7 @@ import React from 'react'
 
 const grade = () => {
   return (
-    <div>grade</div>
+    <div className='container mt-3'>grade</div>
   )
 }
 
