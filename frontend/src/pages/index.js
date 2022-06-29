@@ -1,2 +1,5 @@
-export { default as Home } from "./home"
-export { default as Login } from "./login"
+export { default as Home } from "./home/home"
+export { default as Login } from "./login/login"
+export { default as Schedule } from "./schedule/schedule"
+export { default as Grade } from "./grade/grade"
+export { default as NotFound } from "./notFound/notFound"
