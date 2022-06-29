@@ -2,7 +2,7 @@ import React from 'react'
 
 const schedule = () => {
   return (
-    <div>schedule</div>
+    <div className='container mt-3'>schedule</div>
   )
 }
 
