@@ -1,12 +1,12 @@
 .schedule__top {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .schedule__bot {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
 }
 
 .schedule__time {
@@ -14,6 +14,10 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  border: 1px solid black;
+  background-color: #c1002a;
+  margin-right: 0.5rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
   padding: 1rem 0.5rem;
 }
