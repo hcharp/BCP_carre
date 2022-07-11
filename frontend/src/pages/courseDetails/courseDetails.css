@@ -1,0 +1,13 @@
+.courseDetails__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.courseDetails__body-title {
+  color: #c1002a;
+}
+
+.section {
+  padding: 2rem 0;
+  border-bottom: 1px solid grey;
+}

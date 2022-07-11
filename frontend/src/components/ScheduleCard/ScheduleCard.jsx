@@ -1,10 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import './ScheduleCard.css'
 
 const ScheduleCard = ({ title, code, teacher, date }) => {
+  const navigate = useNavigate();
+
   return (
-    <div style={{padding: '0.5rem'}}>
+    <div style={{padding: '0.5rem'}} onClick={() => navigate(`/courses/${code}`)}>
       {date ? <div className='scheduleCard__date'>{date}</div> : null}
       <div className='scheduleCard__body'>
         <h4 style={{color: '#c1002a'}}>{code}</h4>
